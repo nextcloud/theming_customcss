@@ -24,7 +24,7 @@ script('theming_customcss', 'settings-admin');
 style('theming_customcss', 'settings-admin');
 ?>
 <div id="theming-customcss" class="section">
-	<h2 class="inlineblock"><?php p($l->t('Theming')); ?></h2>
+	<h2 class="inlineblock"><?php p($l->t('Custom CSS')); ?></h2>
         <p class="settings-hint"><?php p($l->t('You can specify your own CSS here. Be aware that this might break something after upgrade.')); ?></p>
 		<div id="theming-customcss_settings_msg" class="msg success inlineblock" style="display: none;">Saved</div>
 	<div>
