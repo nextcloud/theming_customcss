@@ -7,7 +7,7 @@
 	<author>Nextcloud</author>
 	<version>1.0.0</version>
 	<namespace>ThemingCustomCss</namespace>
-	<category>other</category>
+	<category>customization</category>
 
 	<dependencies>
 		<nextcloud min-version="12" max-version="12" />
