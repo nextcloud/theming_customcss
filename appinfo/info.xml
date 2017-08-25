@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <info>
 	<id>theming_customcss</id>
-	<name>Theming custom CSS</name>
+	<name>Custom CSS</name>
 	<description>Adjust the Nextcloud theme with custom CSS</description>
 	<licence>AGPL</licence>
 	<author>Nextcloud</author>
@@ -10,7 +10,7 @@
 	<category>customization</category>
 
 	<dependencies>
-		<nextcloud min-version="12" max-version="12" />
+		<nextcloud min-version="12" max-version="13" />
 	</dependencies>
 
 	<settings>
