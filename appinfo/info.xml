@@ -3,18 +3,17 @@
 	<id>theming_customcss</id>
 	<name>Custom CSS</name>
 	<description>Adjust the Nextcloud theme with custom CSS</description>
+	<summary>Adjust the Nextcloud theme with custom CSS</summary>
 	<licence>AGPL</licence>
-	<author>Nextcloud</author>
+	<author>Julius Härtl</author>
 	<version>1.0.0</version>
 	<namespace>ThemingCustomCss</namespace>
 	<category>customization</category>
-
+    <bugs>https://github.com/juliushaertl/theming_customcss/issues</bugs>
 	<dependencies>
 		<nextcloud min-version="12" max-version="13" />
 	</dependencies>
-
 	<settings>
 		<admin>OCA\ThemingCustomCss\Settings\Admin</admin>
 	</settings>
-
 </info>
