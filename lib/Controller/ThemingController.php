@@ -23,56 +23,31 @@
 
 namespace OCA\ThemingCustomCss\Controller;
 
-use OC\Template\SCSSCacher;
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http;
 use OCP\AppFramework\Http\DataDisplayResponse;
 use OCP\AppFramework\Http\NotFoundResponse;
 use OCP\AppFramework\Utility\ITimeFactory;
-use OCP\Files\IAppData;
 use OCP\IConfig;
-use OCP\IL10N;
 use OCP\IRequest;
 
 class ThemingController extends Controller {
+
 	/** @var ITimeFactory */
 	private $timeFactory;
-	/** @var IL10N */
-	private $l10n;
 	/** @var IConfig */
 	private $config;
-		/** @var IAppData */
-	private $appData;
-	/** @var SCSSCacher */
-	private $scssCacher;
 
-	/**
-	 * ThemingController constructor.
-	 *
-	 * @param string $appName
-	 * @param IRequest $request
-	 * @param IConfig $config
-	 * @param ITimeFactory $timeFactory
-	 * @param IL10N $l
-	 * @param IAppData $appData
-	 * @param SCSSCacher $scssCacher
-	 */
 	public function __construct(
 		$appName,
 		IRequest $request,
 		IConfig $config,
-		ITimeFactory $timeFactory,
-		IL10N $l,
-		IAppData $appData,
-		SCSSCacher $scssCacher
+		ITimeFactory $timeFactory
 	) {
 		parent::__construct($appName, $request);
 
 		$this->timeFactory = $timeFactory;
-		$this->l10n = $l;
 		$this->config = $config;
-		$this->appData = $appData;
-		$this->scssCacher = $scssCacher;
 	}
 
 	/**
@@ -82,7 +57,6 @@ class ThemingController extends Controller {
 	 * @return DataDisplayResponse|NotFoundResponse
 	 */
 	public function getStylesheet() {
-		// TODO: compile SCSS and cache that as a file
 		$customCss = $this->config->getAppValue('theming_customcss', 'customcss', '');
 		$response = new DataDisplayResponse($customCss, Http::STATUS_OK, ['Content-Type' => 'text/css']);
 		$response->cacheFor(86400);

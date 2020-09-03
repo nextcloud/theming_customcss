@@ -40,14 +40,8 @@ class Admin implements ISettings {
 	/** @var IURLGenerator */
 	private $urlGenerator;
 
-	public function __construct(IConfig $config,
-								IL10N $l,
-								ThemingDefaults $themingDefaults,
-								IURLGenerator $urlGenerator) {
+	public function __construct(IConfig $config) {
 		$this->config = $config;
-		$this->l = $l;
-		$this->themingDefaults = $themingDefaults;
-		$this->urlGenerator = $urlGenerator;
 	}
 
 	/**
