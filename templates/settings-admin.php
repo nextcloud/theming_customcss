@@ -28,7 +28,7 @@ style('theming_customcss', 'settings-admin');
         <p class="settings-hint"><?php p($l->t('You can specify your own CSS here. Be aware that this might break something after upgrade.')); ?></p>
 		<div id="theming-customcss_settings_msg" class="msg success inlineblock" style="display: none;">Saved</div>
 	<div>
-		<textarea id="theming-customcss-input" placeholder="<?php p($l->t('Insert your custom CSS here…')); ?>"><?php p($_['customcss']) ?></textarea>
-		<button class="primary">Save</button>
+		<textarea id="theming-customcss-input" placeholder="<?php p($l->t('Insert your custom CSS here …')); ?>"><?php p($_['customcss']) ?></textarea>
+		<button class="primary"><?php p($l->t('Save')); ?></button>
 	</div>
 </div>
