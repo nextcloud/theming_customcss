@@ -3,6 +3,10 @@ OC.L10N.register(
     {
     "Saved" : "Mentve",
     "Error" : "Hiba",
+    "Custom CSS" : "Egyéni CSS",
+    "Adjust the Nextcloud theme with custom CSS" : "A Nextcloud témájának módosítása egyéni CSS-sel",
+    "You can specify your own CSS here. Be aware that this might break something after upgrade." : "Itt megadhatja a saját CSS-ét. Vegye figyelembe, hogy frissítés után hibát is okozhat.",
+    "Insert your custom CSS here …" : "Itt adja meg az egyéni CSS-ét…",
     "Save" : "Mentés"
 },
 "nplurals=2; plural=(n != 1);");
