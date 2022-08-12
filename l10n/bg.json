@@ -1,6 +1,10 @@
 { "translations": {
     "Saved" : "Записано",
     "Error" : "Грешка",
+    "Custom CSS" : "Персонализиран CSS",
+    "Adjust the Nextcloud theme with custom CSS" : "Коригиране на темата на Nextcloud с персонализиран CSS",
+    "You can specify your own CSS here. Be aware that this might break something after upgrade." : "Можете да посочите свой собствен CSS тук. Имайте предвид, че това може да повреди нещо след надграждане.",
+    "Insert your custom CSS here …" : "Вмъкнете своя персонализиран CSS тук ...",
     "Save" : "Запиши"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
