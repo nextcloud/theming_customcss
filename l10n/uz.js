@@ -1,8 +1,8 @@
 OC.L10N.register(
     "theming_customcss",
     {
-    "Saved" : "Saqlangan",
-    "Error" : "Xato",
-    "Save" : "Saqlash"
+    "Saved" : "Saved",
+    "Error" : "Error",
+    "Save" : "Save"
 },
 "nplurals=1; plural=0;");
