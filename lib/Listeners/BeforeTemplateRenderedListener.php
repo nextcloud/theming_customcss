@@ -27,6 +27,8 @@ declare(strict_types=1);
 namespace OCA\ThemingCustomCss\Listeners;
 
 
+use OCA\ThemingCustomCss\AppInfo\Application;
+use OCP\App\IAppManager;
 use OCP\AppFramework\Http\Events\BeforeTemplateRenderedEvent;
 use OCP\EventDispatcher\Event;
 use OCP\EventDispatcher\IEventListener;
@@ -36,21 +38,29 @@ use OCP\Util;
 
 class BeforeTemplateRenderedListener implements IEventListener {
 
+	/** @var IAppManager */
+	private $appManager;
 	/** @var IConfig */
 	private $config;
 	/** @var IURLGenerator */
 	private $urlGenerator;
 
 	public function __construct(
+		IAppManager $appManager,
 		IConfig $config,
 		IURLGenerator $urlGenerator
 	) {
+		$this->appManager = $appManager;
 		$this->config = $config;
 		$this->urlGenerator = $urlGenerator;
 	}
 
 	public function handle(Event $event): void {
 		if (!$event instanceof BeforeTemplateRenderedEvent) {
+			return;
+		}
+
+		if (!$this->appManager->isEnabledForUser(Application::APP_ID)) {
 			return;
 		}
 
