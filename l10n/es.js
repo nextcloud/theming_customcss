@@ -4,6 +4,8 @@ OC.L10N.register(
     "Saved" : "Guardado",
     "Error" : "Error",
     "Custom CSS" : "CSS personalizado",
+    "Adjust the Nextcloud theme with custom CSS" : "Ajuste el tema de Nextcloud con CSS personalizado",
+    "You can specify your own CSS here. Be aware that this might break something after upgrade." : "Puede especificar su propio código CSS aquí. Tenga en cuenta que esto podría causar problemas con algún componente luego de una actualización.",
     "Insert your custom CSS here …" : "Inserte su CSS personalizado aquí...",
     "Save" : "Guardar"
 },
