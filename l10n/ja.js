@@ -3,6 +3,10 @@ OC.L10N.register(
     {
     "Saved" : "保存しました",
     "Error" : "エラー",
+    "Custom CSS" : "カスタムCSS",
+    "Adjust the Nextcloud theme with custom CSS" : "NextcloudテーマをカスタムCSSで調整する",
+    "You can specify your own CSS here. Be aware that this might break something after upgrade." : "ここで独自の CSS を指定できます。これにより、アップグレード後に何かが壊れる可能性があることに注意してください。",
+    "Insert your custom CSS here …" : "ここにカスタムCSSを追加してください ...",
     "Save" : "保存"
 },
 "nplurals=1; plural=0;");
