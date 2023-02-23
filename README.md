@@ -6,7 +6,7 @@ Allow admins to add custom CSS to their Nextcloud instance from inside the Themi
 
 ## Use theming color values
 
-Admin can use CSS custom properties to make use of the variables that are available from the [css-variables.scss](https://github.com/nextcloud/server/blob/master/core/css/css-variables.scss) file:
+Admin can use CSS custom properties to make use of the variables that are available from the [default.css variables file](https://github.com/nextcloud/server/blob/master/apps/theming/css/default.css) file:
 
 Example:
 
