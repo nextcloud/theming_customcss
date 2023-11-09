@@ -29,6 +29,7 @@ namespace OCA\ThemingCustomCss\Listeners;
 
 use OCA\ThemingCustomCss\AppInfo\Application;
 use OCP\App\IAppManager;
+use OCP\AppFramework\Http\Events\BeforeLoginTemplateRenderedEvent;
 use OCP\AppFramework\Http\Events\BeforeTemplateRenderedEvent;
 use OCP\EventDispatcher\Event;
 use OCP\EventDispatcher\IEventListener;
@@ -56,7 +57,7 @@ class BeforeTemplateRenderedListener implements IEventListener {
 	}
 
 	public function handle(Event $event): void {
-		if (!$event instanceof BeforeTemplateRenderedEvent) {
+		if (!$event instanceof BeforeTemplateRenderedEvent && !$event instanceof BeforeLoginTemplateRenderedEvent) {
 			return;
 		}
 
