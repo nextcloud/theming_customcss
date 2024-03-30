@@ -1,6 +1,7 @@
 { "translations": {
     "Saved" : "Guardóse",
     "Error" : "Error",
+    "Custom CSS" : "CSS personalizáu",
     "Save" : "Guardar"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
