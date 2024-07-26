@@ -4,7 +4,7 @@
 	<name>Custom CSS</name>
 	<summary>Adjust the Nextcloud theme with custom CSS</summary>
 	<description>Adjust the Nextcloud theme with custom CSS</description>
-	<version>1.16.0</version>
+	<version>1.17.0</version>
 	<licence>agpl</licence>
 	<author>Julius Härtl</author>
 	<namespace>ThemingCustomCss</namespace>
