@@ -15,3 +15,13 @@ Example:
   color: var(--color-primary);
 }
 ```
+
+## *How can I recover if my customized CSS code has broken the user interface?*
+
+The css configuration is stored in the app config database table, but you can use the `occ config:app:*` commands to obtain, modify or reset it as well. e.g.
+
+```
+occ config:app:get theming_customcss customcss
+occ config:app:set theming_customcss customcss --value "body { background-color: red; }"
+occ config:app:delete theming_customcss customcss
+```
