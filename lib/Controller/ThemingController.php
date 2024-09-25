@@ -52,6 +52,7 @@ class ThemingController extends Controller {
 
 	/**
 	 * @NoCSRFRequired
+  	 * @NoTwoFactorRequired
 	 * @PublicPage
 	 *
 	 * @return DataDisplayResponse|NotFoundResponse
