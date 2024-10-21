@@ -3,6 +3,10 @@ OC.L10N.register(
     {
     "Saved" : "已保存",
     "Error" : "错误",
+    "Custom CSS" : "自定义CSS",
+    "Adjust the Nextcloud theme with custom CSS" : "使用自定义 CSS 调整 Nextcloud 主题",
+    "You can specify your own CSS here. Be aware that this might break something after upgrade." : "您可以在此指定自定义 CSS。请注意，这可能会在升级后导致故障。",
+    "Insert your custom CSS here …" : "在此插入您的自定义 CSS…",
     "Save" : "保存"
 },
 "nplurals=1; plural=0;");
