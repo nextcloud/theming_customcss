@@ -3,7 +3,10 @@ OC.L10N.register(
     {
     "Saved" : "Opgeslagen",
     "Error" : "Fout",
+    "Custom CSS" : "Aangepast CSS",
     "Adjust the Nextcloud theme with custom CSS" : "Pas het Nextcloud thema aan met aangepaste CSS",
+    "You can specify your own CSS here. Be aware that this might break something after upgrade." : "Hier kan een eigen CSS worden gespecificeerd. Let op: dit kan fouten opleveren na een upgrade,",
+    "Insert your custom CSS here …" : "Voer de aangepaste CSS hier in...",
     "Save" : "Opslaan"
 },
 "nplurals=2; plural=(n != 1);");
