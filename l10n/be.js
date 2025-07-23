@@ -1,6 +1,7 @@
 OC.L10N.register(
     "theming_customcss",
     {
+    "Saved" : "Захавана",
     "Error" : "Памылка",
     "Save" : "Захаваць"
 },
