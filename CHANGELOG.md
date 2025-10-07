@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 1.19.0
+
+### Added
+
+- Compatibility with Nextcloud 32
+
 ## 1.18.0
 
 ### Added
