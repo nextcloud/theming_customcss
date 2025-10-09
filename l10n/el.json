@@ -1,6 +1,10 @@
 { "translations": {
     "Saved" : "Αποθηκεύτηκε",
     "Error" : "Σφάλμα",
+    "Custom CSS" : "Προσαρμοσμένο CSS",
+    "Adjust the Nextcloud theme with custom CSS" : "Προσαρμογή του θέματος Nextcloud με προσαρμοσμένο CSS",
+    "You can specify your own CSS here. Be aware that this might break something after upgrade." : "Μπορείτε να καθορίσετε το δικό σας CSS εδώ. Να γνωρίζετε ότι αυτό μπορεί να προκαλέσει προβλήματα μετά την αναβάθμιση.",
+    "Insert your custom CSS here …" : "Εισαγάγετε το προσαρμοσμένο CSS σας εδώ …",
     "Save" : "Αποθήκευση"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
