@@ -1,6 +1,7 @@
 OC.L10N.register(
     "theming_customcss",
     {
+    "Saved" : "Saved",
     "Error" : "ຜິດພາດ",
     "Save" : "ບັນທຶກ"
 },
