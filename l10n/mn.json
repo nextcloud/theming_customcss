@@ -1,6 +1,9 @@
 { "translations": {
     "Saved" : "Хадгалах",
     "Error" : "Алдаа",
+    "Custom CSS" : "Өөрчлөн тохируулсан CSS",
+    "Adjust the Nextcloud theme with custom CSS" : "Nextcloud загварыг өөрчлөн CSS-ээр тохируулах",
+    "Insert your custom CSS here …" : "Өөрийн CSS кодоо энд оруулна уу …",
     "Save" : "Хадгалах"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
