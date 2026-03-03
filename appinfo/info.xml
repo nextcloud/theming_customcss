@@ -7,14 +7,14 @@
 
 The rules can be added in the admin settings in the "Theming" section. This allows you to easily adjust the look and feel of your Nextcloud instance without having to modify any files on the server.
 </description>
-	<version>1.19.0</version>
+	<version>1.20.0</version>
 	<licence>agpl</licence>
 	<author>Julius Härtl</author>
 	<namespace>ThemingCustomCss</namespace>
 	<category>customization</category>
     <bugs>https://github.com/juliushaertl/theming_customcss/issues</bugs>
 	<dependencies>
-		<nextcloud min-version="26" max-version="32"/>
+		<nextcloud min-version="26" max-version="33"/>
 	</dependencies>
 	<settings>
 		<admin>OCA\ThemingCustomCss\Settings\Admin</admin>
