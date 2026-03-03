@@ -3,7 +3,10 @@
 	<id>theming_customcss</id>
 	<name>Custom CSS</name>
 	<summary>Adjust the Nextcloud theme with custom CSS</summary>
-	<description>Adjust the Nextcloud theme with custom CSS</description>
+	<description>This app allows admins to customize the appearance of their Nextcloud instance by adding their own CSS rules.
+
+The rules can be added in the admin settings in the "Theming" section. This allows you to easily adjust the look and feel of your Nextcloud instance without having to modify any files on the server.
+</description>
 	<version>1.19.0</version>
 	<licence>agpl</licence>
 	<author>Julius Härtl</author>
