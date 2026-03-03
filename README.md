@@ -25,3 +25,17 @@ occ config:app:get theming_customcss customcss
 occ config:app:set theming_customcss customcss --value "body { background-color: red; }"
 occ config:app:delete theming_customcss customcss
 ```
+## Usage via occ command
+
+Examples:
+
+```
+occ config:app:get theming_customcss customcss
+occ config:app:set theming_customcss customcss --value "body { background-color: red; }"
+occ config:app:delete theming_customcss customcss
+```
+
+Note:
+
+- If your CSS contains single or double quotes, make sure they are properly escaped so the shell does not break the command.
+occ config:app:set theming_customcss customcss --value '.app-navigation-personal li[data-section-id="workflow"] { display:none } '
