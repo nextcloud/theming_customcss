@@ -5,6 +5,7 @@ OC.L10N.register(
     "Error" : "Hata",
     "Custom CSS" : "Özel CSS",
     "Adjust the Nextcloud theme with custom CSS" : "Nextcloud temasını özel CSS ile ayarlayın",
+    "This app allows admins to customize the appearance of their Nextcloud instance by adding their own CSS rules.\n\nThe rules can be added in the admin settings in the \"Theming\" section. This allows you to easily adjust the look and feel of your Nextcloud instance without having to modify any files on the server." : "Bu uygulama, yöneticilerin kendi CSS kurallarını ekleyerek Nextcloud kopyalarının görünümünü özelleştirmelerini sağlar.\n\nKurallar \"Tema\" bölümündeki yönetici ayarlarına eklenebilir. Böylece, sunucudaki herhangi bir dosyayı değiştirmek zorunda kalmadan Nextcloud kopyanızın görünümünü ve temasını kolayca ayarlayabilirsiniz.",
     "You can specify your own CSS here. Be aware that this might break something after upgrade." : "Özel CSS kodunu buraya yazabilirsiniz. Yaptığınız değişikliklerin yükseltme işlemi sonrası bir şeyleri çalışmaz kılabileceğini unutmayın.",
     "Insert your custom CSS here …" : "Özel CSS kodunuzu buraya yazın…",
     "Save" : "Kaydet"
