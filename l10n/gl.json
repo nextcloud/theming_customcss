@@ -3,6 +3,7 @@
     "Error" : "Erro",
     "Custom CSS" : "CSS personalizado",
     "Adjust the Nextcloud theme with custom CSS" : "Axustar o tema de Nextcloud cun CSS personalizado",
+    "This app allows admins to customize the appearance of their Nextcloud instance by adding their own CSS rules.\n\nThe rules can be added in the admin settings in the \"Theming\" section. This allows you to easily adjust the look and feel of your Nextcloud instance without having to modify any files on the server." : "Esta aplicación permítelle á administración personalizar a aparencia da súa instancia Nextcloud engadindo as súas propias regras CSS.\n\nAs regras pódense engadir na configuración de administración na sección «Tematización». Isto permítelle axustar doadamente o aspecto da súa instancia de Nextcloud sen ter que modificar ningún ficheiro no servidor.",
     "You can specify your own CSS here. Be aware that this might break something after upgrade." : "Pode especificar aquí o seu propio CSS. Teña en conta que isto pode rachar algo após a actualización.",
     "Insert your custom CSS here …" : "Insira aquí o seu CSS personalizado…",
     "Save" : "Gardar"
