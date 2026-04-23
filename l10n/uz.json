@@ -3,6 +3,7 @@
     "Error" : "Xatolik",
     "Custom CSS" : "Boshqa CSS",
     "Adjust the Nextcloud theme with custom CSS" : "Keyingi bulut mavzusini maxsus CSS yordamida sozlang",
+    "This app allows admins to customize the appearance of their Nextcloud instance by adding their own CSS rules.\n\nThe rules can be added in the admin settings in the \"Theming\" section. This allows you to easily adjust the look and feel of your Nextcloud instance without having to modify any files on the server." : "Ushbu ilova administratorlarga o'zlarining CSS qoidalarini qo'shish orqali Nextcloud nusxasining ko'rinishini sozlash imkonini beradi.\n\nQoidalar administrator sozlamalarida \"Mavzu\" bo'limida qo'shilishi mumkin. Bu sizga serverdagi biron bir faylni o'zgartirmasdan Nextcloud nusxangizning ko'rinishi va hissiyotini osongina sozlash imkonini beradi.",
     "You can specify your own CSS here. Be aware that this might break something after upgrade." : "Siz bu erda o'z CSS ko'rsatish mumkin. Shuni yodda tutingki, bu yangilanishdan keyin biror narsani buzishi mumkin.",
     "Insert your custom CSS here …" : "Bu yerda maxsus CSS joylashtiring …",
     "Save" : "Saqlash"
