@@ -3,6 +3,7 @@
     "Error" : "Hiba",
     "Custom CSS" : "Egyéni CSS",
     "Adjust the Nextcloud theme with custom CSS" : "A Nextcloud témájának módosítása egyéni CSS-sel",
+    "This app allows admins to customize the appearance of their Nextcloud instance by adding their own CSS rules.\n\nThe rules can be added in the admin settings in the \"Theming\" section. This allows you to easily adjust the look and feel of your Nextcloud instance without having to modify any files on the server." : "Ez az alkalmazás lehetővé teszi a rendszergazdák számára, hogy saját CSS-szabályok hozzáadásával testreszabják Nextcloud-példányuk megjelenését.\n\nA szabályok a rendszergazdai beállítások „Témázás” részében adhatók hozzá. Ezzel könnyedén módosíthatja Nextcloud-példánya megjelenését anélkül, hogy a kiszolgálón bármilyen fájlt módosítania kellene.",
     "You can specify your own CSS here. Be aware that this might break something after upgrade." : "Itt megadhatja a saját CSS-ét. Vegye figyelembe, hogy frissítés után hibát is okozhat.",
     "Insert your custom CSS here …" : "Itt adja meg az egyéni CSS-ét…",
     "Save" : "Mentés"
