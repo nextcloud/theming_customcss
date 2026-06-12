@@ -1,6 +1,7 @@
 OC.L10N.register(
     "theming_customcss",
     {
+    "Saved" : "Yettwasekles",
     "Error" : "Erreur",
     "Save" : "Sekles"
 },
