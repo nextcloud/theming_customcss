@@ -20,18 +20,23 @@
  *  along with this program. If not, see <http://www.gnu.org/licenses/>.
  *
  */
-$(document).ready(function () {
-	$('html > head').append($('<style type="text/css" id="previewStylesCustom"></style>'));
-	$('#theming-customcss button').click(function (e) {
-		var content = $('#theming-customcss-input').val();
+document.addEventListener('DOMContentLoaded', () => {
+	const style = document.createElement('style');
+	style.type = 'text/css';
+	style.id = 'previewStylesCustom';
+	document.head.appendChild(style);
+
+	const button = document.querySelector('#theming-customcss button');
+	button.addEventListener('click', (e) => {
+		const content = document.querySelector('#theming-customcss-input').value;
 		OCP.AppConfig.setValue('theming_customcss', 'customcss', content, {
-			success: function () {
+			success: () => {
 				OC.msg.finishedSuccess('#theming-customcss_settings_msg', t('theming_customcss', 'Saved'));
-				$('link[href*="theming_customcss/styles"]').remove();
-				$('#previewStylesCustom').replaceWith($('<style type="text/css" id="previewStylesCustom">'+content+'</style>'));
-				OCP.AppConfig.setValue('theming_customcss', 'cachebuster', Date.now);
+				document.querySelectorAll('link[href*="theming_customcss/styles"]').forEach((el) => el.remove());
+				style.textContent = content;
+				OCP.AppConfig.setValue('theming_customcss', 'cachebuster', `${Date.now()}`);
 			},
-			error: function () {
+			error: () => {
 				OC.msg.finishedError('#theming-customcss_settings_msg', t('theming_customcss', 'Error'));
 			}
 		});
