@@ -1,7 +1,6 @@
 OC.L10N.register(
     "theming_customcss",
     {
-    "Error" : "Error",
     "Save" : "Save"
 },
-"nplurals=2; plural=(n != 1);");
+"nplurals=1; plural=0;");

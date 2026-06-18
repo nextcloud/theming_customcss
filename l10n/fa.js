@@ -1,12 +1,12 @@
 OC.L10N.register(
     "theming_customcss",
     {
-    "Saved" : "دخیره شد",
+    "Saved" : "ذخیره شد",
     "Error" : "خطا",
     "Custom CSS" : "CSS سفارشی",
-    "Adjust the Nextcloud theme with custom CSS" : "تنظیم پوسته Nextcloud با CSS سفارشی",
-    "This app allows admins to customize the appearance of their Nextcloud instance by adding their own CSS rules.\n\nThe rules can be added in the admin settings in the \"Theming\" section. This allows you to easily adjust the look and feel of your Nextcloud instance without having to modify any files on the server." : "این برنامه به مدیران امکان می‌دهد ظاهر نمونه Nextcloud خود را با افزودن ruleهای CSS سفارشی کنند.\n\nRuleها را می‌توان در تنظیمات مدیر، در بخش «پوسته»، اضافه کرد. با این کار می‌توانید بدون نیاز به تغییر هیچ فایلی روی سرور، ظاهر و حس نمونه Nextcloud خود را به‌سادگی تنظیم کنید.",
-    "You can specify your own CSS here. Be aware that this might break something after upgrade." : "می‌توانید CSS دلخواه خود را اینجا مشخص کنید. توجه داشته باشید که این ممکن است پس از به‌روزرسانی چیزی را از کار بیندازد.",
+    "Adjust the Nextcloud theme with custom CSS" : "تنظیم تم نکست‌کلود با CSS سفارشی",
+    "This app allows admins to customize the appearance of their Nextcloud instance by adding their own CSS rules.\n\nThe rules can be added in the admin settings in the \"Theming\" section. This allows you to easily adjust the look and feel of your Nextcloud instance without having to modify any files on the server." : "این برنامه به مدیران اجازه می‌دهد با افزودن قوانین CSS خود، ظاهر نمونه نکست‌کلود را شخصی‌سازی کنند. قوانین را می‌توان در تنظیمات مدیریت در بخش \"تم‌سازی\" اضافه کرد. این کار به شما امکان می‌دهد بدون نیاز به تغییر فایل‌های روی سرور، ظاهر و حس نمونه نکست‌کلود خود را به راحتی تنظیم کنید.",
+    "You can specify your own CSS here. Be aware that this might break something after upgrade." : "می‌توانید CSS خود را اینجا مشخص کنید. توجه داشته باشید که این کار ممکن است پس از به‌روزرسانی باعث ایجاد مشکل شود.",
     "Insert your custom CSS here …" : "CSS سفارشی خود را اینجا وارد کنید …",
     "Save" : "ذخیره"
 },
