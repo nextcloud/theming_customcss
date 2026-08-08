@@ -1,6 +1,6 @@
-# Custom CSS: customize your CSS to better fit your Theming needs
+# Custom (S)CSS: customize your CSS to better fit your Theming needs
 
-Allow admins to add custom CSS to their Nextcloud instance from inside the Theming settings.
+Allow admins to add custom CSS or SCSS to their Nextcloud instance from inside the Theming settings.
 
 ![](https://github.com/juliushaertl/theming_customcss/raw/master/screenshot.png)
 
@@ -16,9 +16,9 @@ Example:
 }
 ```
 
-## *How can I recover if my customized CSS code has broken the user interface?*
+## *How can I recover if my customized CSS or SCSS code has broken the user interface?*
 
-The css configuration is stored in the app config database table, but you can use the `occ config:app:*` commands to obtain, modify or reset it as well. e.g.
+The CSS configuration is stored in the app config database table, but you can use the `occ config:app:*` commands to obtain, modify or reset it as well. e.g.
 
 ```
 occ config:app:get theming_customcss customcss
@@ -26,6 +26,8 @@ occ config:app:set theming_customcss customcss --value "body { background-color:
 occ config:app:delete theming_customcss customcss
 ```
 ## Usage via occ command
+
+_Only applies for custom CSS, not SCSS!_
 
 Examples:
 
@@ -42,3 +44,13 @@ Note:
 ```
 occ config:app:set theming_customcss customcss --value '.app-navigation-personal li[data-section-id="workflow"] { display:none } '
 ```
+
+
+---
+
+## Third-party code
+
+- `js/vendor/sass.js`, `js/vendor/sass.worker.js` — sass.js by Rodney Rehm,
+  MIT License. See js/vendor/LICENSE-sass.js.txt.
+- `js/vendor/ace/` — Ace editor by Ajax.org, BSD-3-Clause License.
+  See js/vendor/ace/LICENSE.

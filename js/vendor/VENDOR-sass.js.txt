@@ -1,0 +1,5 @@
+// SPDX-License-Identifier: MIT
+
+This directory contains sass.js (https://github.com/medialize/sass.js),
+© Rodney Rehm, MIT License. It bundles libsass and emscripten, both
+also MIT-licensed. See https://github.com/medialize/sass.js/blob/master/LICENSE.

@@ -20,15 +20,21 @@
  *  along with this program. If not, see <http://www.gnu.org/licenses/>.
  *
  */
+script('theming_customcss', 'vendor/sass');
+script('theming_customcss', 'vendor/ace/ace');
+script('theming_customcss', 'vendor/ace/mode-css');
+script('theming_customcss', 'vendor/ace/mode-scss');
+script('theming_customcss', 'vendor/ace/theme-textmate');
 script('theming_customcss', 'settings-admin');
 style('theming_customcss', 'settings-admin');
 ?>
-<div id="theming-customcss" class="section">
-	<h2 class="inlineblock"><?php p($l->t('Custom CSS')); ?></h2>
-        <p class="settings-hint"><?php p($l->t('You can specify your own CSS here. Be aware that this might break something after upgrade.')); ?></p>
+<div id="theming-customcss" class="section" style="border-top: 1px solid var(--color-border);">
+	<h2 class="inlineblock"><?php p($l->t('Custom CSS or SCSS')); ?></h2>
+        <p class="settings-hint"><?php p($l->t('You can specify your own CSS or SCSS here. Be aware that this might break something after upgrade. SCSS will be compiled to CSS on save.')); ?></p>
 		<div id="theming-customcss_settings_msg" class="msg success inlineblock" style="display: none;">Saved</div>
 	<div>
-		<textarea id="theming-customcss-input" placeholder="<?php p($l->t('Insert your custom CSS here …')); ?>"><?php p($_['customcss']) ?></textarea>
+		<div id="theming-customcss-editor"><?php p($_['customcss']) ?></div>
+		<textarea id="theming-customcss-input" style="display:none;"></textarea>
 		<button class="primary"><?php p($l->t('Save')); ?></button>
 	</div>
 </div>
