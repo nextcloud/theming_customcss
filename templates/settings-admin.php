@@ -24,7 +24,6 @@ script('theming_customcss', 'vendor/sass');
 script('theming_customcss', 'vendor/ace/ace');
 script('theming_customcss', 'vendor/ace/mode-css');
 script('theming_customcss', 'vendor/ace/mode-scss');
-script('theming_customcss', 'vendor/ace/theme-textmate');
 script('theming_customcss', 'settings-admin');
 style('theming_customcss', 'settings-admin');
 ?>
@@ -34,7 +33,6 @@ style('theming_customcss', 'settings-admin');
 		<div id="theming-customcss_settings_msg" class="msg success inlineblock" style="display: none;">Saved</div>
 	<div>
 		<div id="theming-customcss-editor"><?php p($_['customcss']) ?></div>
-		<textarea id="theming-customcss-input" style="display:none;"></textarea>
 		<button class="primary"><?php p($l->t('Save')); ?></button>
 	</div>
 </div>
