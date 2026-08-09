@@ -53,11 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		const content = editor.getValue();
 		OC.msg.startSaving('#theming-customcss_settings_msg');
 
-		if (!sass) {
-			sass = new Sass();
-		}
+		contentToCompile = (content) ? content : " ";
 
-		sass.compile(content, (result) => {
+		if (!sass) sass = new Sass();
+
+		sass.compile(contentToCompile, (result) => {
 			if (result.status !== 0) {
 				OC.msg.finishedError(
 					'#theming-customcss_settings_msg',
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			// Store raw SCSS first, then compiled CSS. Update live preview and cache
 			// only after both config values succeed.
-			OCP.AppConfig.setValue('theming_customcss', 'customscss', content, {
+			OCP.AppConfig.setValue('theming_customcss', 'customscss', contentToCompile, {
 				success: () => {
 					OCP.AppConfig.setValue('theming_customcss', 'customcss', compiled, {
 						success: () => {
