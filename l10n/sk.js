@@ -5,6 +5,7 @@ OC.L10N.register(
     "Error" : "Chyba",
     "Custom CSS" : "Vlastné CSS",
     "Adjust the Nextcloud theme with custom CSS" : "Vylepšiť motív vzhľadu Nextcloudu s vlastným CSS",
+    "This app allows admins to customize the appearance of their Nextcloud instance by adding their own CSS rules.\n\nThe rules can be added in the admin settings in the \"Theming\" section. This allows you to easily adjust the look and feel of your Nextcloud instance without having to modify any files on the server." : "Táto aplikácia umožňuje správcom prispôsobiť vzhľad svojej inštancie Nextcloud pridaním vlastných pravidiel CSS.\n\nPravidlá možno pridať v nastaveniach správcu v časti „Témy“. Vďaka tomu môžete jednoducho upraviť vzhľad a dojem zo svojej inštancie Nextcloud bez toho, aby ste museli upravovať súbory na serveri.",
     "You can specify your own CSS here. Be aware that this might break something after upgrade." : "Sem môžete zadať svoj vlastný CSS. Uvedomte si, že to môže po aktualizácii niečo rozbiť.",
     "Insert your custom CSS here …" : "Sem vložte vaše vlastné CSS...",
     "Save" : "Uložiť"
