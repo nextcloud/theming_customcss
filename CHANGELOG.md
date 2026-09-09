@@ -1,6 +1,18 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 1.22.0
+
+### Added
+
+- Compatibility with Nextcloud 35
+
+## 1.21.0
+
+### Added
+
+- Compatibility with Nextcloud 34
+
 ## 1.20.0
 
 ### Added
