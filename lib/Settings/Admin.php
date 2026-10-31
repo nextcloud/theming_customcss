@@ -23,56 +23,35 @@
 
 namespace OCA\ThemingCustomCss\Settings;
 
-use OCA\Theming\ThemingDefaults;
 use OCP\AppFramework\Http\TemplateResponse;
 use OCP\IConfig;
-use OCP\IL10N;
-use OCP\IURLGenerator;
 use OCP\Settings\ISettings;
 
 class Admin implements ISettings {
-	/** @var IConfig */
-	private $config;
-	/** @var IL10N */
-	private $l;
-	/** @var ThemingDefaults */
-	private $themingDefaults;
-	/** @var IURLGenerator */
-	private $urlGenerator;
+	private IConfig $config;
 
 	public function __construct(IConfig $config) {
 		$this->config = $config;
 	}
 
-	/**
-	 * @return TemplateResponse
-	 */
-	public function getForm() {
+	public function getForm(): TemplateResponse {
+		$customscss = $this->config->getAppValue('theming_customcss', 'customscss', '');
 		$customcss = $this->config->getAppValue('theming_customcss', 'customcss', '');
 
-		$parameters = [
-			'customcss' => $customcss
-		];
+		// Fallback for upgrades: older versions only stored compiled CSS under
+		// 'customcss', so use that if SCSS source doesn't exist.
+		$textareaContent = $customscss !== '' ? $customscss : $customcss;
 
-		return new TemplateResponse('theming_customcss', 'settings-admin', $parameters, '');
+		return new TemplateResponse('theming_customcss', 'settings-admin', [
+			'customcss' => $textareaContent
+		], '');
 	}
 
-	/**
-	 * @return string the section ID, e.g. 'sharing'
-	 */
-	public function getSection() {
+	public function getSection(): string {
 		return 'theming';
 	}
 
-	/**
-	 * @return int whether the form should be rather on the top or bottom of
-	 * the admin section. The forms are arranged in ascending order of the
-	 * priority values. It is required to return a value between 0 and 100.
-	 *
-	 * E.g.: 70
-	 */
-	public function getPriority() {
+	public function getPriority(): int {
 		return 10;
 	}
-
 }
